@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FBF9EB;
+}
+
+nav{
+    /* width: min(95%, 1200px); */
+    background-color: #FFFEFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-part-1{
+    display: flex;
+    gap: 1rem;
+    /* font-size: clamp(1rem, 5vw, 4rem) */
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+nav .nav-part-2{
+    width: 5vw;
+    height: auto;
+}
+
+nav .nav-part-2 img{
+    width: 100%;
+    
+}
+
+n
