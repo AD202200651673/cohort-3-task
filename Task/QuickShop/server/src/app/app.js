@@ -12,7 +12,7 @@ app.use(cors({
     origin(origin, callback) {
         const allowedOrigins = [
             'http://localhost:5173',
-            'https://cohort-3-task-1.onrender.com/'
+            'https://cohort-3-task-1.onrender.com'
         ];
 
         if (
