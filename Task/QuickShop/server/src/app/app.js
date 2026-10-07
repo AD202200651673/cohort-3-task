@@ -12,7 +12,7 @@ app.use(cors({
     origin(origin, callback) {
         const allowedOrigins = [
             'http://localhost:5173',
-            'https://quick-shop-pearl-theta.vercel.app'
+            'https://cohort-3-task.onrender.com/'
         ];
 
         if (
