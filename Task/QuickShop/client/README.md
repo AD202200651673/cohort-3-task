@@ -33,10 +33,10 @@ network, find the computer's local IPv4 address, and open
 the private network if prompted. The API URL then uses that same computer IP.
 
 To use a different API origin, copy `.env.example` to `.env` and set
-`VITE_API_BASE_URL` to the API origin without a trailing slash or `/api` (for
-example, `https://api.example.com`). This value is also used in production
-builds; when it is unset in production, requests use the same-origin `/api`
-path.
+`VITE_API_BASE_URL` to the API origin without `/api` (for example,
+`https://api.example.com`). A trailing slash is removed automatically. In
+production, set this to the deployed backend origin; when it is unset,
+requests use the same-origin `/api` path.
 
 ## Available API Endpoints
 

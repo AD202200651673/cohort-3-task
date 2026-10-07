@@ -3,7 +3,8 @@ import { store } from '../store';
 import { setAccessToken, removeUser } from '../../features/auth/state/authSlice';
 
 const isDevelopment = import.meta.env.DEV;
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || (
+const configuredApiBaseUrl = import.meta.env.VITE_API_BASE_URL?.trim().replace(/\/+$/, '');
+const apiBaseUrl = configuredApiBaseUrl || (
     isDevelopment
         ? `${window.location.protocol}//${window.location.hostname}:3000`
         : ''
